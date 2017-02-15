@@ -1,6 +1,8 @@
 # PHY-230-TeamTLK
 Team Homework #1
 
+#Lizzie Apel
+
 import random
 import numpy as np 
 import matplotlib.pyplot as plt
