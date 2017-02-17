@@ -1,28 +1,29 @@
 # PHY-230-TeamTLK
 Team Homework #1
 
-#Lizzie Apel
-
 import random
 import numpy as np 
 import matplotlib.pyplot as plt
 
-def showMontePi(numDarts):
-    N =numDarts
+def showMontepi(numDarts):
+    n=numDarts
+    circle=0
+    np.arange(0,1,10)
     
-    for i in range(numDarts):
-        x = np.random.rand(N)
-        y = np.random.rand(N)
-
-        d = np.sqrt(x**2 + y**2)
-
-        circle = 0
+    for i in range(n):
+        x = np.random.random()
+        y = np.random.random() 
+        plt.plot(x,y,'go')
+        d = math.sqrt(x**2 + y**2)
+        
         if d <= 1:
             circle = circle + 1
-            color="blue"
+            color= 'b'
         else:
-            color= "red"
+            color= 'r'
+            
+        
+        pi = circle/n * 4
 
-    pi = circle/numDarts * 4
-    
+    plt.show()
     return pi
